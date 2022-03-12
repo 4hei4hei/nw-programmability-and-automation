@@ -44,6 +44,6 @@ Temporary Items
 # End of https://www.toptal.com/developers/gitignore/api/macos,vagrant
 
 # for vagrant-rsync-back
-ubuntu-21.04/sync_data
-centos-8/sync_data
+vm/ubuntu-21.04/sync_data
+vm/centos-8/sync_data
 
