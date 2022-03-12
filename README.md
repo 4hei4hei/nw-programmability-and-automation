@@ -1,12 +1,10 @@
-# nw_programmability_and_automation
+# nw-programmability-and-automation
 
-PythonによるNW設定変更スクリプトや、VM でNW設定を操作するための Vagrant テンプレートを保存しています
+Mac 環境で、Python による NW 設定変更スクリプトや、VM で NW 設定を操作するための Vagrant テンプレートを保存しています
 
 ubuntu-21.04 と centos-8 のイメージを準備しています
 
 ゲストマシン側のファイル操作用に、Vagrant の sync_folder 機能を利用しています
-
-環境は Mac OS です
 
 ## Version
 
@@ -31,7 +29,7 @@ vagrant up
 ```
 
 - ファイル同期
-  当該 VM のディレクトリ内で以下コマンドを実行すると VM 内のファイルがホストマシンに同期されます
+  当該 VM のディレクトリ内で以下コマンドを実行すると 指定した VM 内のディレクトリ配下がホストマシンに同期されます
 
 ```
 vagrant rsync-back
