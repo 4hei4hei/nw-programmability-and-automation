@@ -45,5 +45,5 @@ Temporary Items
 
 # for vagrant-rsync-back
 ubuntu-21.04/sync_data
-centos08/sync_data
+centos-8/sync_data
 
