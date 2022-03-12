@@ -1,22 +1,23 @@
 # vm
 
-VM でネットワーク設定を操作するための Vagrant テンプレートです。
+VM でネットワーク設定を操作するための Vagrant テンプレートです
 
-ubuntu-21.04 と centos-8 のイメージを用意しました。
+ubuntu-21.04 と centos-8 のイメージを準備しています
 
-ゲストマシン側のファイル操作用に、sync_folder 機能を利用しています。
+ゲストマシン側のファイル操作用に、Vagrant の sync_folder 機能を利用しています
 
-環境は Mac OS です。
+環境は Mac OS です
 
 ## Version
 
-- Version
-  - Vagrant 2.2.19
-    - vagrant-rsync-back (0.0.1, global)
+以下が利用したバージョンです
+
+- Vagrant 2.2.19
+  - vagrant-rsync-back (0.0.1, global)
 
 ## Setup
 
-- 以下コマンドで vagrant をインストール
+- 以下コマンドで Vagrant をインストール
 
 ```
 brew install vagrant
@@ -27,6 +28,13 @@ brew install vagrant
 ```
 cd centos-8
 vagrant up
+```
+
+- ファイル同期
+  当該 VM のディレクトリ内で以下コマンドを実行すると VM 内のファイルがホストマシンに同期されます
+
+```
+vagrant rsync-back
 ```
 
 ## Reference
