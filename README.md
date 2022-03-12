@@ -1,6 +1,6 @@
-# vm
+# nw_programmability_and_automation
 
-VM でネットワーク設定を操作するための Vagrant テンプレートです
+PythonによるNW設定変更スクリプトや、VM でNW設定を操作するための Vagrant テンプレートを保存しています
 
 ubuntu-21.04 と centos-8 のイメージを準備しています
 
