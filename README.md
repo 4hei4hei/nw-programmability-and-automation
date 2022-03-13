@@ -1,8 +1,11 @@
 # nw-programmability-and-automation
 
-Mac 環境で、Python による NW 設定変更スクリプトや、VM で NW 設定を操作するための Vagrant テンプレートを保存しています
+Mac 環境で、以下のものを用意しています
 
-ubuntu-21.04 と centos-8 のイメージを準備しています
+- Python による NW 設定変更スクリプト
+- VM で NW 設定を操作するための Vagrant テンプレート
+
+VM は ubuntu-21.04 と centos-8 のイメージを準備しています
 
 ゲストマシン側のファイル操作用に、Vagrant の sync_folder 機能を利用しています
 
@@ -10,10 +13,21 @@ ubuntu-21.04 と centos-8 のイメージを準備しています
 
 以下が利用したバージョンです
 
+- Python 3.9.10
+  - ansible 5.4.0
+  - Jinja2 3.0.3
+  - requests 2.27.1
+  - ncclient 0.6.12
 - Vagrant 2.2.19
   - vagrant-rsync-back (0.0.1, global)
 
 ## Setup
+
+- Python 環境を準備
+
+```
+pyenv install 3.9.10
+```
 
 - 以下コマンドで Vagrant をインストール
 
